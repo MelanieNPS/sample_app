@@ -12,6 +12,12 @@ module SessionsHelper
         end
     end
 
+    # Logs out the current user.
+    def log_out
+        reset_session
+        @current_user = nil
+    end
+
     def logged_in?
         !current_user.nil?
     end
