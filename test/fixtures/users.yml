@@ -2,6 +2,7 @@ janice:
   name: Janice Ng
   email: janice@something.com
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 timothy:
   name: Timothy Ong
