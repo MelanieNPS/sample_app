@@ -4,7 +4,7 @@ class UsersShowTest < ActionDispatch::IntegrationTest
 
   def setup
     @inactive_user  = users(:inactive)
-    @activated_user = users(:timothy)
+    @activated_user = users(:archer)
   end
 
   test "should redirect when user not activated" do

@@ -1,6 +1,6 @@
-janice:
-  name: Janice Ng
-  email: janice@something.com
+michael:
+  name: Michael Example
+  email: michael@example.com
   password_digest: <%= User.digest('password') %>
   admin: true
   activated: true
@@ -13,9 +13,9 @@ inactive:
   admin: false
   activated: false
 
-timothy:
-  name: Timothy Ong
-  email: timothytc@something.com
+archer:
+  name: Sterling Archer
+  email: duchess@example.gov
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
