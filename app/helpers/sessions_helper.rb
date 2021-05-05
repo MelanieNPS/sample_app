@@ -30,6 +30,12 @@ module SessionsHelper
         end
     end
 
+    #Returns true if the given user is the current user
+    def current_user?(user)
+        #Catches corner case where user is nil
+        user && user == current_user
+    end
+
     # Forgets a persistent session
     def forget(user)
         user.forget
